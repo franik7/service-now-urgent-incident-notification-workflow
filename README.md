@@ -40,6 +40,17 @@ I spent time thinking about how to ensure the Networking Operations group is not
 
 ---
 
+## 📦 Contents
+
+This repository contains two main components:
+
+- `service-now-urgent-incident-notification-workflow.xml`  
+  This is a ServiceNow update set file.
+- `assets/Diagram.png`  
+  A visual architecture diagram illustrating the entire flow of the incident lifecycle.
+
+---
+
 ## 🧠 AI Scenario (Future Enhancement)
 
 To further improve incident routing, an AI agent could enhance the current setup by:
