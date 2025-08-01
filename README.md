@@ -31,8 +31,8 @@ The updated system now:
 - Confirmed group members received the message, and incident creator got a copy.
 
 **Challenge**
-I spent time thinking about how to ensure the Networking Operations group is notified even if the assignment group is left blank by the caller or incident handler.  
-I realized that once the incident is reassigned by the flow, the target group receives an automatic notification. This eliminated the need to send a separate notification manually.
+- I spent time thinking about how to ensure the Networking Operations group is notified even if the assignment group is left blank by the caller or incident handler.  
+- I realized that once the incident is reassigned by the flow, the target group receives an automatic notification. This eliminated the need to send a separate notification manually.
 
 ---
 
