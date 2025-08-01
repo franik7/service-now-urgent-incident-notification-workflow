@@ -22,12 +22,15 @@ In this implementation, I addressed a failure in the notification workflow that 
   - `Urgency = 1`
   - `Impact = 1`
   - `Category = Network`
-- Action: Update Record – Assign to `Networking Operations` group, which gets notified of the assignment via email. 
+- Action: Update Record – Assign to `Networking Operations` group, which gets notified of the assignment via email.
 
 ### ✅ Testing & Validation
 - Created a critical incident with proper values.
 - Verified both email notifications and assignment worked correctly.
 - Confirmed group members received the message, and incident creator got a copy.
+
+### ✅ Challenge
+I spent time thinking about how to ensure the Networking Operations group is notified even if the assignment group is left blank by the caller or incident handler. I realized that once the incident is reassigned by the flow, the target group receives an automatic notification. This eliminated the need to send a separate notification manually.
 
 ---
 
