@@ -46,8 +46,8 @@ The updated system now:
 
 This repository contains two main components:
 
-- `service-now-urgent-incident-notification-workflow.xml` — ServiceNow update set file.  
-- `assets/Diagram.png` — A visual architecture diagram illustrating the entire flow of the incident lifecycle.
+- `urgent-incident-notification-workflow.xml` — ServiceNow update set file.  
+- `/Diagram.png` — A visual architecture diagram illustrating the entire flow of the incident lifecycle.
 
 ---
 
