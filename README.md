@@ -38,7 +38,7 @@ The updated system now:
 
 ## Architecture Diagram
 
-![System Flow Diagram](assets/Diagram.png)
+![System Flow Diagram](/Diagram.png)
 
 ---
 
