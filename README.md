@@ -11,7 +11,7 @@ The updated system now:
 
 - Automatically assigns the incident to the Networking Operations group.
 - Triggers a notification email to both the group members and the incident creator (by default to the incident creator).
-- Sends a separate notification to the assigned group. 
+- Sends a separate customized email notification to the Networking Operations group.
 - Operates entirely through Flow Designer using conditions and update record action.
 
 ---
@@ -35,13 +35,19 @@ The updated system now:
 **Challenge**
 - I spent time thinking about how to ensure the Networking Operations group is notified even if the assignment group is left blank by the caller or incident handler.  
 - I realized that once the incident is reassigned by the flow, the target group receives an automatic notification.
-- However, due to the severity of the incident, I decided to include a separate email notification with customized message that includes: ticket number, caller name and customized subject line. 
+- However, due to the severity of the incident, I decided to include a separate email notification with a customized message that includes the ticket number, caller name, and a customized subject line.
 
 ---
 
 ## Architecture Diagram
 
 ![System Flow Diagram](/Diagram.png)
+
+---
+
+## How to Import the Update Set
+- Go to **System Update Sets → Retrieved Update Sets → Import Update Set from XML**, upload `urgent-incident-notification-workflow.xml`.  
+- Open the imported set, click **Preview**, then **Commit** to apply it. 
 
 ---
 
