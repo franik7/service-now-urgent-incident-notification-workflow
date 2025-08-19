@@ -11,6 +11,7 @@ The updated system now:
 
 - Automatically assigns the incident to the Networking Operations group.
 - Triggers a notification email to both the group members and the incident creator (by default to the incident creator).
+- Sends a separate notification to the assigned group. 
 - Operates entirely through Flow Designer using conditions and update record action.
 
 ---
@@ -24,15 +25,17 @@ The updated system now:
   - Impact = 1
   - Category = Network
 - Action: Update Record – Assign to `Networking Operations` group, which gets notified of the assignment via email.
+- Action: A separate email is sent to `Networking Operations` group with ticket details.
 
 **Testing & Validation**
 - Created a critical incident with proper values.
 - Verified both email notifications and assignment worked correctly.
-- Confirmed group members received the message, and incident creator got a copy.
+- Confirmed group members received the reassignment message, email notification, and incident creator got a copy.
 
 **Challenge**
 - I spent time thinking about how to ensure the Networking Operations group is notified even if the assignment group is left blank by the caller or incident handler.  
-- I realized that once the incident is reassigned by the flow, the target group receives an automatic notification. This eliminated the need to send a separate notification manually.
+- I realized that once the incident is reassigned by the flow, the target group receives an automatic notification.
+- However, due to the severity of the incident, I decided to include a separate email notification with customized message that includes: ticket number, caller name and customized subject line. 
 
 ---
 
