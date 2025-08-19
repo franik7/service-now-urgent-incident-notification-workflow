@@ -35,7 +35,7 @@ The updated system now:
 **Challenge**
 - I spent time thinking about how to ensure the Networking Operations group is notified even if the assignment group is left blank by the caller or incident handler.  
 - I realized that once the incident is reassigned by the flow, the target group receives an automatic notification.
-- However, due to the severity of the incident, I decided to include a separate email notification with a customized message that includes the ticket number, caller name, and a customized subject line.
+- However, due to the criticality of the incident, I decided to include a separate email notification with a customized message that includes the ticket number, caller name, and a customized subject line.
 
 ---
 
